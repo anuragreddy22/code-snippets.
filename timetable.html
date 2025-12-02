@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Timetable</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 12px;
+        text-align: center;
+    }
+    th {
+        background: #f4f4f4;
+    }
+    td {
+        height: 60px;
+    }
+    .time {
+        width: 100px;
+        font-weight: bold;
+        background: #fafafa;
+    }
+    @media (max-width: 700px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+        th {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h2>Weekly Timetable</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th class="time">Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="time">9:00 - 10:00</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td>History</td>
+            <td>Sports</td>
+        </tr>
+
+        <tr>
+            <td class="time">10:00 - 11:00</td>
+            <td>Science</td>
+            <td>Math</td>
+            <td>Computer</td>
+            <td>Biology</td>
+            <td>Art</td>
+        </tr>
+
+        <tr>
+            <td class="time">11:00 - 12:00</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Break</td>
+        </tr>
+
+        <tr>
+            <td class="time">12:00 - 1:00</td>
+            <td>Chemistry</td>
+            <td>Geography</td>
+            <td>Math</td>
+            <td>Music</td>
+            <td>Science</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
